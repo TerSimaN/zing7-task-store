@@ -15,7 +15,7 @@ const BestSellerProducts = () => {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-7">
                 {products.map((product, index) => (
-                    <div key={index} className="flex flex-col bg-white rounded-lg px-5 pt-4 pb-5 w-full max-w-sm">
+                    <div key={index} className="flex flex-col bg-white rounded-lg px-5 pt-4 pb-5 w-full max-w-sm shadow-md">
                         <div className="flex justify-between items-center">
                             <span className={`${product.isOnSale ? `` : `invisible`} bg-store-red-600 bg-opacity-10 rounded font-roboto font-medium text-xs leading-[1.125rem] text-store-red-600 px-2.5 py-0.5`}>SALE</span>
                             <button type="button" className={`inline-flex items-center border border-store-gray-300 border-opacity-10 rounded-full text-center ${product.isLoved ? `text-store-gray-650` : `text-store-gray-300`} p-3`}>
