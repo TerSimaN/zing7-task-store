@@ -5,9 +5,6 @@ import instagram_icon from './instagram_icon.svg';
 import github_icon from './github_icon.svg';
 import linkedin_icon from './linkedin_icon.svg';
 
-import arrow_down_icon from './arrow_down_icon.svg';
-import arrow_right_icon from './arrow_right_icon.svg';
-
 import us_flag_icon from './us_flag_icon.svg';
 import fr_flag_icon from './fr_flag_icon.svg';
 import de_flag_icon from './de_flag_icon.svg';
@@ -39,8 +36,6 @@ export {
     instagram_icon,
     github_icon,
     linkedin_icon,
-    arrow_down_icon,
-    arrow_right_icon,
     us_flag_icon,
     fr_flag_icon,
     de_flag_icon,
