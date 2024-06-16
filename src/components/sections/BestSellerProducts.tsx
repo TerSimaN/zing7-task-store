@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const BestSellerProducts = () => {
     return (
-        <section className="container flex flex-col items-center gap-y-10 border-t border-store-gray-100 py-20 mt-10">
-            <div className="flex flex-col text-center">
+        <section className="container flex flex-col items-center gap-y-10 border-t border-store-gray-100 md:py-20 py-12 sm:mt-10 mt-6">
+            <div className="flex flex-col text-center sm:px-0 px-4">
                 <h1 className="font-rubik font-medium text-4xl leading-[3.25rem] tracking-[0.2px] text-store-gray-900">
                     Best Seller Products
                 </h1>
@@ -13,7 +13,7 @@ const BestSellerProducts = () => {
                     Check our best seller products on Elma website right now
                 </span>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-7">
+            <div className="sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-7 sm:space-y-0 space-y-7">
                 {products.map((product, index) => (
                     <div key={index} className="flex flex-col bg-white rounded-lg px-5 pt-4 pb-5 w-full max-w-sm shadow-md">
                         <div className="flex justify-between items-center">

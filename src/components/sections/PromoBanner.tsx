@@ -4,13 +4,11 @@ import Button from "../ui/Button"
 
 const PromoBanner = () => {
     return (
-        <section className="relative container flex justify-end items-center bg-store-blue-700 bg-opacity-10 pr-[6.875rem] py-14 mt-10">
+        <section className="relative container flex justify-end items-center bg-store-blue-700 bg-opacity-10 lg:pr-[6.875rem] lg:px-0 px-4 lg:py-14 py-7 lg:mt-10 mt-6">
             <Image
                 src={promo_banner_image}
                 alt="promo banner image"
-                width={350}
-                height={340}
-                className="absolute left-[6.25rem] top-3"
+                className="max-sm:hidden sm:absolute lg:left-[6.25rem] left-4 top-3 lg:w-[21.75rem] w-72"
             />
             <div className="flex flex-col max-w-[23.5rem]">
                 <span className="font-roboto font-medium text-sm leading-5 text-store-blue-700">FLASH SALE 7.7.7</span>

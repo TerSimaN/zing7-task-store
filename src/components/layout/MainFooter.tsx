@@ -5,11 +5,11 @@ import { facebook_icon, github_icon, instagram_icon, linkedin_icon, twitter_icon
 const MainFooter = () => {
     return (
         <footer className="bg-store-gray-100">
-            <div className="container md:flex md:items-center md:justify-between py-5 w-full">
+            <div className="container flex max-sm:flex-col gap-y-4 items-center justify-between md:px-0 px-4 py-5 w-full">
                 <span className="font-roboto font-normal text-sm leading-5 text-store-gray-600">
                     Store © Copyright 2024, Inc. All rights reserved
                 </span>
-                <div className="flex gap-x-3 items-center">
+                <div className="flex sm:gap-x-3 gap-x-10 items-center">
                     <Link href="#">
                         <Image
                             src={facebook_icon}

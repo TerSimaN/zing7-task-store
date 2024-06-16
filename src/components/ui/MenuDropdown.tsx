@@ -26,7 +26,7 @@ const MenuDropdown = (props: {
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m8 10 4 4 4-4" />
                 </svg>
             </button>
-            <div className={`${open ? `` : `hidden`} absolute top-6 -left-5 z-10 bg-white rounded-lg w-48 overflow-hidden overflow-y-auto shadow`}>
+            <div className={`${open ? `` : `hidden`} absolute top-6 -right-3 z-10 bg-white rounded-lg mt-1.5 w-48 overflow-hidden overflow-y-auto shadow`}>
                 <ul className={`p-2 ${props.className}`}>
                     {props.menuItems.map((menuItem, index) => (
                         <li key={index} className="inline-flex w-full whitespace-nowrap">

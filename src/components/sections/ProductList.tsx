@@ -1,14 +1,13 @@
 import { productLists } from "@/config/constants"
 import Image from "next/image"
 import Link from "next/link"
-import { arrow_right_icon } from "../../../public/assets/icons"
 
 const ProductList = () => {
     return (
-        <section className="container py-12 mt-10">
-            <div className="flex gap-x-[1.875rem]">
+        <section className="container md:px-0 px-4 md:py-12 py-8 md:mt-10 mt-6">
+            <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 gap-x-[1.875rem] gap-y-8 sm:space-y-0 space-y-8">
                 {productLists.map((productList, index) => (
-                    <div key={index} className="flex flex-col gap-y-5 min-w-[21.875rem]">
+                    <div key={index} className="flex flex-col gap-y-5 max-w-sm">
                         <h1 className="font-rubik font-medium text-[1.375rem] leading-[1.875rem] tracking-[0.2px] text-store-gray-900">{productList.title}</h1>
                         {productList.listItems.map((listItem, index) => (
                             <div key={index} className="flex items-center p-5">
@@ -34,10 +33,9 @@ const ProductList = () => {
                         ))}
                         <Link href={'#'} className="flex justify-between items-center font-roboto font-medium text-base leading-[1.375rem] text-store-blue-900 p-3.5">
                             View More Products...
-                            <Image
-                                src={arrow_right_icon}
-                                alt=""
-                            />
+                            <svg className="w-6 h-6 text-store-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m10 16 4-4-4-4" />
+                            </svg>
                         </Link>
                     </div>
                 ))}
