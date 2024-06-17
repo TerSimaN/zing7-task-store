@@ -35,7 +35,7 @@ const Hero = () => {
                         alt="hero image"
                     />
                 </div>
-                <button className="hidden lg:block absolute top-60 -end-28 bg-white rounded-full p-5 size-16 shadow-md">
+                <button className="hidden lg:block absolute top-60 -end-28 bg-white rounded-full p-5 size-16 shadow-lg shadow-store-gray-650/5">
                     <svg className="w-6 h-6 text-store-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m10 16 4-4-4-4" />
                     </svg>
