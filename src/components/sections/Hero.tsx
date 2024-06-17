@@ -6,12 +6,12 @@ import Link from "next/link"
 const Hero = () => {
     return (
         <section className="flex items-center bg-store-gray-50 w-full">
-            <div className="relative container flex lg:gap-8 xl:gap-0 md:px-0 px-4 lg:py-16 py-8">
-                <div className="mr-auto max-w-[31.25rem]">
+            <div className="relative container flex max-sm:flex-col-reverse lg:gap-8 xl:gap-0 md:px-0 px-4 lg:py-16 py-8">
+                <div className="mr-auto sm:mt-0 mt-6 max-w-[31.25rem]">
                     <span className="font-roboto font-medium text-sm leading-5 text-store-blue-700">
                         SONY WH-H910N
                     </span>
-                    <h1 className="font-rubik font-medium sm:text-[3.5rem] text-5xl sm:leading-[4.5rem] leading-[3.5rem] tracking-[0.2px] text-store-gray-900 mt-4">
+                    <h1 className="font-rubik font-medium sm:text-[3.5rem] text-4xl sm:leading-[4.5rem] leading-[3.5rem] tracking-[0.2px] text-store-gray-900 mt-4">
                         Best in Hi-Res and Noise Cancelling
                     </h1>
                     <p className="font-roboto font-normal text-base leading-7 text-store-gray-450 mt-4">
@@ -28,11 +28,12 @@ const Hero = () => {
                         </svg>
                     </Link>
                 </div>
-                <div className="relative z-10 hidden lg:mt-0 lg:block">
-                    <div className="absolute left-16 top-20 -z-10 bg-store-blue-600 rounded-full size-[7.125rem]"></div>
+                <div className="relative z-10 sm:max-lg:hidden block lg:mt-0">
+                    <div className="absolute sm:left-16 left-20 sm:top-20 top-16 -z-10 bg-store-blue-600 rounded-full sm:size-[7.125rem] size-20"></div>
                     <Image
                         src={hero_image_1}
                         alt="hero image"
+                        className="max-sm:w-60 sm:mx-0 mx-auto"
                     />
                 </div>
                 <button className="hidden lg:block absolute top-60 -end-28 bg-white rounded-full p-5 size-16 shadow-lg shadow-store-gray-650/5">

@@ -43,7 +43,7 @@ const MainHeader = () => {
                             />
                         </Link>
                     </div>
-                    <div className="flex gap-x-5 items-center z-30">
+                    <div className="flex sm:gap-x-5 sm:justify-normal justify-between items-center z-30">
                         <Link href="#" className="font-rubik font-normal text-base leading-5 tracking-[0.18px] text-store-gray-500">
                             Order tracking
                         </Link>
@@ -136,7 +136,7 @@ const MainHeader = () => {
                                     <path fillRule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clipRule="evenodd" />
                                 </svg>
                             </button>
-                            <div className={`${profileOpen ? `` : `hidden`} absolute right-0 z-10 bg-white rounded-lg mt-2 w-48 overflow-hidden overflow-y-auto shadow`}>
+                            <div className={`${profileOpen ? `` : `hidden`} absolute right-0 z-20 bg-white rounded-lg mt-2 w-48 overflow-hidden overflow-y-auto shadow`}>
                                 <div className="inline-flex flex-col items-center border-b border-store-gray-100 px-3 pb-1.5 mt-4 w-full whitespace-nowrap">
                                     <div className="inline-flex items-center border border-store-gray-100 rounded-full text-center text-store-gray-400 p-3">
                                         <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">

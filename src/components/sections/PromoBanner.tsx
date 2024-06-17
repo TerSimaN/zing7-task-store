@@ -4,13 +4,13 @@ import Button from "../ui/Button"
 
 const PromoBanner = () => {
     return (
-        <section className="relative container flex justify-end items-center bg-store-blue-700 bg-opacity-10 lg:pr-[6.875rem] lg:px-0 px-4 lg:py-14 py-7 lg:mt-10 mt-6">
+        <section className="relative container flex max-sm:flex-col justify-end items-center bg-store-blue-700 bg-opacity-10 lg:pr-[6.875rem] lg:px-0 px-4 lg:py-14 py-7 lg:mt-10 mt-6">
             <Image
                 src={promo_banner_image}
                 alt="promo banner image"
-                className="max-sm:hidden sm:absolute lg:left-[6.25rem] left-4 top-3 lg:w-[21.75rem] w-72"
+                className="max-sm:block sm:absolute lg:left-[6.25rem] left-4 top-3 lg:w-[21.75rem] w-72"
             />
-            <div className="flex flex-col max-w-[23.5rem]">
+            <div className="flex flex-col sm:mt-0 mt-4 max-w-[23.5rem]">
                 <span className="font-roboto font-medium text-sm leading-5 text-store-blue-700">FLASH SALE 7.7.7</span>
                 <h1 className="font-rubik font-medium text-4xl leading-[3.25rem] tracking-[0.2px] text-store-gray-900 mt-4">Lenovo Yoga X</h1>
                 <p className="font-roboto font-normal text-base leading-[1.625rem] text-store-gray-450 mt-2.5">
